@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Constancia digital | Verificación</title>
+  <style>
+    :root{ --bg:#f3f5f7; --card:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); }
+    .wrap{ max-width:860px; margin:28px auto; padding:0 16px; }
+    .card{ background:var(--card); border-radius:16px; box-shadow:0 12px 28px rgba(0,0,0,.08); overflow:hidden; border:1px solid rgba(0,0,0,.04); }
+    .banner{ padding:22px 22px 10px 22px; text-align:center; background:linear-gradient(180deg, #0b2f52 0%, #0f4c81 100%); }
+    .banner img{ width:100%; max-width:520px; height:auto; border-radius:10px; background:rgba(255,255,255,.08); padding:6px; }
+    .content{ padding:22px; }
+    .pill{ display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700;
+            background:#eaf6ee; color:#166534; border:1px solid #bbf7d0; }
+    .title{ text-align:center; margin:10px 0 2px 0; font-size:20px; font-weight:700; }
+    .subtitle{ text-align:center; margin:0 0 18px 0; color:var(--muted); font-size:14px; }
+    .hr{ height:1px; background:var(--line); margin:14px 0 18px 0; }
+    .grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .field{ border:1px solid var(--line); background:#fafafa; border-radius:12px; padding:12px; }
+    .k{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; margin-bottom:6px; }
+    .v{ font-size:16px; font-weight:700; line-height:1.25; }
+    .small{ font-size:12px; color:var(--muted); font-weight:400; }
+    .full{ grid-column:1 / -1; }
+    .foot{ margin-top:18px; font-size:12.5px; color:var(--muted); line-height:1.4; }
+    @media (max-width:640px){ .grid{ grid-template-columns:1fr; } .banner{ padding:18px 14px 8px 14px; } .content{ padding:16px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="banner">
+        <img src="logotipo.png" alt="Logo del Congreso">
+      </div>
+
+      <div class="content" style="text-align:center;">
+        <span class="pill">CONSTANCIA VÁLIDA</span>
+      </div>
+
+      <div class="content">
+        <h1 class="title">Constancia Digital de Participación</h1>
+        <p class="subtitle">Verificación oficial mediante folio y código QR</p>
+
+        <div class="hr"></div>
+
+        <div class="grid">
+          <div class="field full">
+            <div class="k">Curso o evento</div>
+            <div class="v">Quinto Encuentro de Ex-Residentes y Curso de Actualidades en Ortopedia del Centro Médico ISSEMYM<br><span class="small">Lic. Arturo Montiel Rojas, ISSEMYM</span></div>
+          </div>
+
+          <div class="field">
+            <div class="k">Folio</div>
+            <div class="v">CI-01-0112</div>
+          </div>
+
+          <div class="field">
+            <div class="k">Nombre</div>
+            <div class="v">José María Campos Cendejas</div>
+          </div>
+
+          <div class="field">
+            <div class="k">Tiempo de permanencia (minutos)</div>
+            <div class="v">865</div>
+          </div>
+
+          <div class="field">
+            <div class="k">Puntos</div>
+            <div class="v">6</div>
+          </div>
+
+          <div class="field full">
+            <div class="k">Fecha</div>
+            <div class="v">5 y 6 de diciembre de 2025</div>
+          </div>
+        </div>
+
+        <p class="foot">
+          Esta constancia es válida únicamente si se consulta mediante el código QR oficial.
+          Si el folio, nombre o datos no coinciden con el documento impreso, deberá considerarse no válida.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
